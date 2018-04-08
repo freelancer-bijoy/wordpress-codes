@@ -1,0 +1,17 @@
+Post Formats #
+add_theme_support('post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+
+Post Thumbnails #
+add_theme_support( 'post-thumbnails' );
+
+Custom Background #
+add_theme_support( 'custom-background' );
+
+Custom Header #
+add_theme_support( 'custom-header' );
+
+Custom Logo #
+add_theme_support( 'custom-logo' );
+
+Title Tag #
+add_theme_support( 'title-tag' );
