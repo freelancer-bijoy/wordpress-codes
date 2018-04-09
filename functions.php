@@ -1,5 +1,10 @@
 <?php
 /*
+ * Requiring Files
+*/
+require_once(get_template_directory().'/inc/enqueue.php');
+
+/*
  * Tell WordPress to run my_theme_setup() when the 'after_setup_theme' hook is run. 
 */
 add_action( 'after_setup_theme', 'my_theme_setup' );
@@ -40,3 +45,14 @@ function my_theme_setup(){
 	load_theme_textdomain( 'textdomain', get_template_directory() . '/languages' );
 	
 }
+
+
+
+/**
+ * Proper way to enqueue scripts and styles
+ */
+function theme_css_js_enqueue() {
+	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+	wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'theme_css_js_enqueue' );
