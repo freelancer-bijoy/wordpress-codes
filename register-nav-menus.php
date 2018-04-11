@@ -15,5 +15,6 @@
 		'container'      => 'div',
 		'container_class'      => 'navbar-collapse collapse align-left',
 		'menu_class'           => 'nav navbar-nav',
+		'depth'			=> '3',
 	)); 
 ?>
