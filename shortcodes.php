@@ -1,4 +1,4 @@
-////////////////First Style/////////////
+////////////////Self-Closing Shortcodes/////////////
 <?php
 	function themeShortcodes($atts)
 	{
@@ -16,7 +16,7 @@
 [hello color= "blue" font-size= "30px"]
 
 
-////////////////Second Style/////////////
+////////////////Enclosing Shortcodes/////////////
 <?php
 	function themeShortcodes($atts, $content)
 	{
@@ -29,3 +29,6 @@
 	add_shortcode( 'hello', 'themeShortcodes' );
 ?>
 [hello color= "blue" font-size= "30px"]Hello This Bijoy[/hello]
+
+
+////////////////Nested Shortcode/////////////
