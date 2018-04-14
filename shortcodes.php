@@ -1,3 +1,4 @@
+////////////////First Style/////////////
 <?php
 	function themeShortcodes($atts)
 	{
@@ -13,3 +14,7 @@
 
 
 [hello color= "blue" font-size= "30px"]
+
+
+////////////////Second Style/////////////
+
