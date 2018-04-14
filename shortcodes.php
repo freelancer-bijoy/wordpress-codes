@@ -32,3 +32,31 @@
 
 
 ////////////////Nested Shortcode/////////////
+
+<?php
+	function themeShortcodes($atts, $content)
+	{
+		extract(shortcode_atts( array(
+			'color' => 'black', 
+			'font_size'  => '25px', 
+		), $atts ));
+		$nesting_contents = do_shortcode( $content );
+		return "<p style='color: ".$color."; font-size: ".$font_size.";'>".$nesting_contents."</p>";
+	}
+	add_shortcode( 'hello', 'themeShortcodes' );
+?>
+
+<?php
+	function nestedShortcodes($atts, $content)
+	{
+		extract(shortcode_atts( array(
+			'color' => 'black', 
+			'font_size'  => '25px', 
+		), $atts ));
+		$nesting_contents = do_shortcode( $content );
+		return "<p style='color: ".$color."; font-size: ".$font_size.";'>".$content."</p>";
+	}
+	add_shortcode( 'nested', 'nestedShortcodes' );
+?>
+
+[hello color= "blue" font-size= "30px"]Hello This Bijoy[nested]Kumar Kar[/nested][/hello]
