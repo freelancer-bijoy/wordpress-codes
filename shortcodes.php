@@ -13,7 +13,7 @@
 
 
 
-[hello color= "blue" font-size= "30px"]
+[hello color= "blue" font_size= "30px"]
 
 
 ////////////////Enclosing Shortcodes/////////////
@@ -28,7 +28,7 @@
 	}
 	add_shortcode( 'hello', 'themeShortcodes' );
 ?>
-[hello color= "blue" font-size= "30px"]Hello This Bijoy[/hello]
+[hello color= "blue" font_size= "30px"]Hello This Bijoy[/hello]
 
 
 ////////////////Nested Shortcode/////////////
@@ -59,4 +59,4 @@
 	add_shortcode( 'nested', 'nestedShortcodes' );
 ?>
 
-[hello color= "blue" font-size= "30px"]Hello This Bijoy[nested color= "green" font-size= "50px"]Kumar Kar[/nested][/hello]
+[hello color= "blue" font_size= "30px"]Hello This Bijoy[nested color= "green" font_size= "50px"]Kumar Kar[/nested][/hello]
