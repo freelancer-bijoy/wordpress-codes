@@ -59,4 +59,4 @@
 	add_shortcode( 'nested', 'nestedShortcodes' );
 ?>
 
-[hello color= "blue" font-size= "30px"]Hello This Bijoy[nested]Kumar Kar[/nested][/hello]
+[hello color= "blue" font-size= "30px"]Hello This Bijoy[nested color= "green" font-size= "50px"]Kumar Kar[/nested][/hello]
